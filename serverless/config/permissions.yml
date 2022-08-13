@@ -1,0 +1,18 @@
+# use requirement according I am role
+
+# role:
+#   statements:
+#     - Effect: Allow
+#       Action:
+#         - 's3:PutObject'
+#         - 's3:GetObject'
+#         - 's3:ListBucket'
+#       Resource:
+#         - 'arn:aws:s3:::${self:service}-${opt:stage, self:provider.stage}-srdataset/*'
+
+#     - Effect: Allow
+#       Action:
+#         - 'secretsmanager:GetSecretValue'
+#         - 'secretsmanager:DescribeSecret'
+#       Resource:
+#         - 'arn:aws:secretsmanager:${self:provider.region}:${aws:accountId}:secret:*'

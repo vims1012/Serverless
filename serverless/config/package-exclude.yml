@@ -1,0 +1,10 @@
+  - serverless/**
+  - requirements.txt
+  - .serverless
+  - venv/**
+  - README.md
+  - lib/**
+  - node_modules/**
+  - __pycache__/**
+  - package-lock.json
+  - test.json

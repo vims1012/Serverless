@@ -1,0 +1,37 @@
+# service: huia-capital-serverless
+# frameworkVersion: "3"
+
+# package:
+#   exclude: ${file(./serverless/config/package-exclude.yml)}
+  
+# provider:
+#   iam: ${file(./serverless/config/permissions.yml)}
+#   name: aws
+#   runtime: python3.9
+#   region: us-east-1
+#   stage: ${opt:stage, 'dev'}
+#   memorySize: 512
+#   timeout: 30
+#   deploymentBucket:
+#     name: ${self:service}-${opt:stage, self:provider.stage}-${self:provider.region}
+#   s3:
+#     <S3Bucket-Name>:
+#       name: ${self:service}-${opt:stage, self:provider.stage}-<S3Bucket-Name>
+
+# functions: ${file(./serverless/config/functions.yml)}
+
+# resources: ${file(./serverless/config/resources.yml)}
+
+# stepFunctions:
+#   stateMachines: ${file(./serverless/config/state-machines.yml)}
+        
+# plugins:
+#   - serverless-step-functions
+#   - serverless-python-requirements
+
+# custom:
+#   pythonRequirements:
+#     zip: true
+#     slim: true
+#     noDeploy:
+#       - boto3

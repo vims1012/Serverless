@@ -1,0 +1,1 @@
+# for example AbcStateMachine: ${file(./serverless/state_machines/abc-state-machine.yml)}

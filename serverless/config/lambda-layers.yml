@@ -1,0 +1,6 @@
+Libraries:
+  path: lib/
+  compatibleRuntimes:
+    - python3.9
+  compatibleArchitectures:
+    - x86_64

@@ -1,0 +1,5 @@
+# define function here after put into mani serverless file 
+# handler: handler.vimal_gandhi 
+# name: ${self:service}-${opt:stage, self:provider.stage}-vima-gandhi
+# description:  
+
